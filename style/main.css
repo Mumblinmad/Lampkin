@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+
+    --karla: 'Karla', sans-serif;
+    --rubik:  'Rubik', sans-serif;
+
+    --high: 3em;
+    --mid: 1.75em;
+}
+
+body{
+    font-family:var(--karla);
+    background-color:#76cedd;
+    overflow-x: hidden;
+}
+
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    height:10vh;
+
+    background-color:white;
+}
+
+nav > *{
+    margin:auto;
+}
+.logo{
+    font-family: var(--rubik);
+}
+.logo > img{
+    max-height:7vh;
+}
+nav > ul{
+    font-family: var(--rubik);
+    
+}
+nav >ul > a{
+    color:black;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-right:10px;
+}
+
+.container{
+    margin:3% auto;
+    height:50vh;
+    width:60vw;
+    position: relative;
+
+    background-image: url(../img/building.JPG);
+    background-size: cover;
+
+    background-color: #4fa0c0;
+
+}
+
+.containerText{
+    position: absolute;
+    top:70%;
+    right:-18%;
+    color: white;
+    font-weight: bolder;
+    font-size: 2em;
+    background-color: rgba(0,0,0,70%);
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: auto;
+    height:25vh;
+    gap:10px;
+}
+
+.cards > *{
+    width:50ch;
+    text-align:center;
+    background-color:white;
+}
+
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section > p{
+    width:18ch;
+    margin-left:auto;
+    margin-right:auto;
+}
+#reminder{
+    font-weight: bold;
+}
+.flatgrid{
+    display:flex;
+    margin-top:4%;
+    
+    
+}
+
+#forms{
+    display:flex;
+    flex-direction:column;
+    margin: auto;
+    text-align: center;
+   
+    width:35vw;
+    padding:10px;
+    background-color: white;
+}
+
+button{
+    font-size: larger;
+    padding:10px;
+}
+.about{
+    display:flex;
+    flex-direction: row;
+    width:50vw;
+}
+
+.about > img{
+    height:35vh;
+}
+
+.text{
+    max-width: 45ch;
+    margin:auto;
+    padding:2%;
+    background-color: white;
+}
+
+@media only screen and (max-width:600px){
+
+   .cards{
+       flex-direction: column;
+   }
+
+}

@@ -1,0 +1,42 @@
+*{font-size: 1em;}
+nav > ul {display:none}
+
+nav {position:fixed;
+top:0;
+z-index: 4;
+width:100%;}
+
+.container{
+    margin:0;
+    padding:0;
+    margin-top: 100px;
+
+    height:30vh;
+    width:auto;
+}
+
+.cards{
+    margin-top: 10vw;
+    height:50vh;
+}
+
+.cards > *{
+    width:100vw;
+    height:40vh;
+}
+
+#forms{
+    margin-top: 12vw;
+    width:90vw;
+}
+.flatgrid{
+    margin-bottom:10px;
+}
+
+.about > img{
+    height:30vh;
+}
+
+.about{
+    margin-top: 20px;
+}
